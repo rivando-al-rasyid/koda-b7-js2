@@ -1,11 +1,10 @@
-
+// Memasukan Package readline untuk menerima input dari user
 const readline = require('readline').createInterface({
   input: process.stdin,
   output: process.stdout
 });
 
 readline.question('Total Belanjaan? ', totalBelanja => {
-  console.log(`Total belanjaan Anda: ${totalBelanja}`);
   if (  totalBelanja < 500000)  {
   console.log("Total belanjaan Anda: " + totalBelanja);
   console.log("Diskon: 0");
